@@ -1,312 +1,324 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
-.main-container{
-    background-image: url(img/bg.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
-    position: relative; 
+.main-container {
+  background-image: url(img/bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
 }
 
 .main-container .box {
-    height: 70vh;
-    width: 100%;
-    background-color: black; 
-    opacity: 0.69;
-    /* position: absolute and top 0 se back color main-container ke upper aa jayega  */
-    position: absolute;
-    top: 0;
+  height: 70vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.69;
+  /* position: absolute and top 0 se back color main-container ke upper aa jayega  */
+  position: absolute;
+  top: 0;
 }
 
 /* Navigation bar */
 
 nav {
-    /* margin: auto from this center the content */
-    margin: auto;
-    width: 80vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  /* margin: auto from this center the content */
+  margin: auto;
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav  img{
-    color: red;
-    width: 150px;
-    position: relative;
-    z-index: 10;
+nav img {
+  color: red;
+  width: 150px;
+  position: relative;
+  z-index: 10;
 }
-nav  button{
-    position: relative;
-    z-index: 10;
+nav button {
+  position: relative;
+  z-index: 10;
 }
 
 /* decription belove the nav bar */
 
 .description {
-    /* border: 2px solid red; */
-    /* height:100 karne se  wo pura height le rha tha or saperation line niche jaa rha tha isliye - karne se uthna jahg hat jayega or wha line apna jagah le lega */
-    height: calc(100% - 14%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    gap: 14px;
-    position: relative;
-    z-index: 10;
+  /* border: 2px solid red; */
+  /* height:100 karne se  wo pura height le rha tha or saperation line niche jaa rha tha isliye - karne se uthna jahg hat jayega or wha line apna jagah le lega */
+  height: calc(100% - 14%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 14px;
+  position: relative;
+  z-index: 10;
 }
 
 /*   > == its mean it  apply only just next first child of .description becouser of >     */
-.description> :nth-child(1){
-    font-size: 45px;
-    font-weight: 400px;
-    text-align: center;
-
+.description > :nth-child(1) {
+  font-size: 45px;
+  font-weight: 400px;
+  text-align: center;
 }
 
-.description> :nth-child(2){
-    text-align: center;
+.description > :nth-child(2) {
+  text-align: center;
 }
 
-.description> :nth-child(3){
-    font-size: 17px;
-    font-weight: 400px;
-    text-align: center;
-
+.description > :nth-child(3) {
+  font-size: 17px;
+  font-weight: 400px;
+  text-align: center;
 }
 
 /* sepration-line */
 .sepration-line {
-    height: 7px;
-    background-color: rgb(51, 48, 48);
-    position: relative;
-    /* z-index -- is used to top(above) the position of  element */
-    z-index: 20;
+  height: 7px;
+  background-color: rgb(51, 48, 48);
+  position: relative;
+  /* z-index -- is used to top(above) the position of  element */
+  z-index: 20;
 }
 
 .btn {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 7px 14px;
-    color: white;
-    border-radius: 4px;
-    border: 1px solid white;
-    cursor: pointer;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 7px 14px;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 .btn-eng {
-    background-color: rgb(14, 13, 13,0.76);
-    padding: 6px 27px;
-    font-size: 14px;
-    margin-right: 10px;
-
+  background-color: rgb(14, 13, 13, 0.76);
+  padding: 6px 27px;
+  font-size: 14px;
+  margin-right: 10px;
 }
 .btn-red-sm {
-    background-color: red;
-    border: 1px solid red;
+  background-color: red;
+  border: 1px solid red;
 }
 
 .description-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    padding: 6px 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 27px;
 }
 
 .btn-red {
-    background-color: red;
-    border: 1px solid red;
-    font-size: 17px;
-
+  background-color: red;
+  border: 1px solid red;
+  font-size: 17px;
 }
 
 .description input {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 15px 101px 8px 14px;
-    font-weight: 500;
-    font-size: 12px;
-    border-radius: 4px;
-    background-color: rgb(11, 10, 10,0.7);
-    border: 1px solid rgb(109, 107, 107,0.5);
-    color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 15px 101px 8px 14px;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgb(11, 10, 10, 0.7);
+  border: 1px solid rgb(109, 107, 107, 0.5);
+  color: white;
 }
 
 /* second container */
 
 .sec-container {
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: center;
-    max-width: 70vw;
-    margin: auto;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
 }
 
 .sec-decription {
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
 .sec-decription h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 .sec-decription p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
 }
 .con-img {
-    position: relative;
+  position: relative;
 }
 .con-img img {
-    position: relative;
-    z-index: 10;
-
+  position: relative;
+  z-index: 10;
 }
 .con-img video {
-    position: absolute;
-    right: 76px;
-    top: 91px;
-    z-index: 7;
-
+  position: absolute;
+  right: 76px;
+  top: 91px;
+  z-index: 7;
 }
 
 /* third container  and forth container use the same styling */
 
-
 /* Asked Questions section */
 
 .faq {
-    /* border: 2px solid red; */
-    padding: 30px;
-    color: white;
+  /* border: 2px solid red; */
+  padding: 30px;
+  color: white;
 }
 
 .faq h2 {
-    text-align: center;
-    font-size: 44px;
+  text-align: center;
+  font-size: 44px;
 }
 .faq-box {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    max-width: 60vw;
-    background-color: rgba(49, 48, 48, 0.98);
-    margin: 10px auto;
-    font-size: 17px;
-    cursor: pointer;
-    transition: all 1s ease;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  max-width: 60vw;
+  background-color: rgba(49, 48, 48, 0.98);
+  margin: 10px auto;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 1s ease;
 }
 
 .faq-box:hover {
-    background-color: gray;
+  background-color: gray;
 }
 
 /* it conver the + color into white */
 .faq-box svg {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 /* footer */
 
 footer {
-    /* border: 2px solid red; */
-    color: white;
-    max-width: 60vw;
-    margin: 40px auto;
+  /* border: 2px solid red; */
+  color: white;
+  max-width: 60vw;
+  margin: 40px auto;
 }
 
 .questions {
-    margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .footer-item {
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
 }
 
 .footer-item a {
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
 }
-
 
 /* meadia query */
 
-@media screen  and (max-width:1300px){
+@media screen and (max-width: 1000px) {
+  nav {
+    width: 90vw;
+  }
 
-    nav {
-        width: 93vw;
-    }
-.sec-container {
+  nav img {
+    width: 110px;
+  }
+
+  .btn-eng {
+    background-color: rgb(14, 13, 13, 0.76);
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  .btn-red-sm {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .btn-red {
+    font-size: 13px;
+  }
+
+  .description input {
+    padding: 10px 70px 8px 14px;
+  }
+
+  .description > :nth-child(1) {
+    font-size: 28px;
+  }
+  .description > :nth-child(2) {
+    font-size: 14px;
+  }
+  .description > :nth-child(3) {
+    font-size: 14px;
+  }
+
+  .description-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sec-container {
     flex-wrap: wrap;
-    
-}
+  }
 
-.sec-decription {
+  .sec-decription {
     padding-top: 30px;
     padding-bottom: 27px;
-}
+  }
 
-.footer {
+  .sec-decription h1 {
+    font-size: 27px;
+  }
+
+  .sec-decription p {
+    font-size: 13px;
+  }
+
+  .con-img img {
+    max-width: 70vw;
+  }
+  .con-img video {
+    max-width: 62vw;
+    top: 20px;
+    left: 20px;
+  }
+
+  .faq-box {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+  }
+
+  .faq h2 {
+    font-size: 25px;
+  }
+
+  .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 29px;
-}
-
-.faq h2 {
-    font-size: 30px;
-}
-
-.description> :nth-child(1){
-    font-size: 36px;
-}
-.description> :nth-child(2){
-    font-size: 16px;
-}
-.description> :nth-child(3){
-    font-size: 17px;
-}
-
-.description-btn {
-    display: flex;
-    flex-direction: column;
-}
-
-.btn-red {
-    font-size: 14px;
-
-}
-
-.con-img img {
-    max-width: 70vw;
-}
-.con-img video {
-    max-width: 66vw;
-    top : 20px;
-    left:20px;
-}
-
-.sec-decription h1 {
-    font-size: 30px;
-}
-
-.sec-decription p {
-    font-size: 15px;
-}
-
+  }
 }
